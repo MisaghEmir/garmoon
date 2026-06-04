@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Loading from "./components/Loading";
 import Header from "./components/Header";
@@ -30,32 +29,29 @@ function App() {
     let searchmusic = e.target.value;
     if (searchmusic.length > 0) {
       setSearch(true);
+    }else{
+      setSearch(false);
+
     }
-    let pizzaS = pizza.filter((item) => {
-      if (item.name.toLowerCase().includes(searchmusic.toLowerCase())) {
-        return item;
-      }
-    });
-    let bergerS = berger.filter((item) => {
-      if (item.name.toLowerCase().includes(searchmusic.toLowerCase())) {
-        return item;
-      }
-    });
-    let sandvichS = sandvich.filter((item) => {
-      if (item.name.toLowerCase().includes(searchmusic.toLowerCase())) {
-        return item;
-      }
-    });
-    let sibS = sib.filter((item) => {
-      if (item.name.toLowerCase().includes(searchmusic.toLowerCase())) {
-        return item;
-      }
-    });
-    let pastaS = pasta.filter((item) => {
-      if (item.name.toLowerCase().includes(searchmusic.toLowerCase())) {
-        return item;
-      }
-    });
+    let pizzaS = pizza.filter((item) =>
+      item.name.toLowerCase().includes(searchmusic.toLowerCase()),
+    );
+
+    let bergerS = berger.filter((item) =>
+      item.name.toLowerCase().includes(searchmusic.toLowerCase()),
+    );
+
+    let sandvichS = sandvich.filter((item) =>
+      item.name.toLowerCase().includes(searchmusic.toLowerCase()),
+    );
+
+    let sibS = sib.filter((item) =>
+      item.name.toLowerCase().includes(searchmusic.toLowerCase()),
+    );
+
+    let pastaS = pasta.filter((item) =>
+      item.name.toLowerCase().includes(searchmusic.toLowerCase()),
+    );
     console.log({ bergerS });
     setSearchArray([...pizzaS, ...bergerS, ...sandvichS, ...sibS, ...pastaS]);
   };
