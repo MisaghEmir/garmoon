@@ -1,0 +1,63 @@
+.root {
+  --theme-bg-100: rgb(32, 101, 209);
+  --theme-bg-200: rgb(32, 101, 209);
+  --theme-bg-300: rgb(32, 101, 209);
+  --theme-bg-400: rgb(178, 203, 240);
+  --theme-bg-500: rgb(121, 161, 226);
+  --theme-bg-600: rgb(218, 230, 249);
+  --theme-bg-700: rgba(80, 144, 240, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+}
+
+.loader {
+  --theme-bg-100: rgb(32, 101, 209);
+  height: 6px;
+  width: 20%;
+  border-radius: 50px;
+  --c: no-repeat linear-gradient(var(--theme-bg-100) 0 0);
+  background: var(--c), var(--c), #424242;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+  z-index: 999;
+}
+@keyframes l16 {
+  0% {
+    background-position:
+      -150% 0,
+      -150% 0;
+  }
+  66% {
+    background-position:
+      250% 0,
+      -150% 0;
+  }
+  100% {
+    background-position:
+      250% 0,
+      250% 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .loader{
+    width: 50%;
+  }
+}
+
+.sticky-div {
+  position: sticky;
+  left: 0;
+  top: 0px; /* یا هر فاصله‌ای که میخوای */
+}
+
+.notscroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+.notscroll::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207);
+  border-radius: 100px;
+  height: 0%;
+  width: 0;
+}

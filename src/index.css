@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@font-face {
+  font-family: "YekanX-Regular";
+  src: url("../public/font//yekanx/IRANYekanX-Regular.3-a6bab62df99b.woff2") format("truetype");
+}
+
+@font-face {
+  font-family: "YekanX-Medium";
+  src: url("../public/font//yekanx/IRANYekanX-Medium.3-5e66990e2ecd.woff2") format("truetype");
+}
+
+@font-face {
+  font-family: "YekanX-Bold";
+  src: url("../public/font//yekanx/IRANYekanX-Bold.3-0691142bf3bf.woff2") format("truetype");
+}
+
+.yekanX-regular {
+  font-family: "YekanX-Regular", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.yekanX-medium {
+  font-family: "YekanX-Medium", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.yekanX-bold {
+  font-family: "YekanX-Bold", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "YekanX-Medium",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: inherit;
+}
+
