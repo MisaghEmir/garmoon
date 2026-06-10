@@ -53,6 +53,18 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207);
+  border-radius: 100px;
+  height: 0%;
+  width: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

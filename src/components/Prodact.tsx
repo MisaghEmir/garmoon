@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Pizza } from "../config/types";
 
 function Prodact({ item }: { item: Pizza }) {
+  const [imageShow, setImageShow] = useState(false);
+
+  const imageShowHandle = () => {
+    setImageShow(!imageShow);
+  };
   return (
     <div className="px-9 border-b">
       <div className="grid grid-cols-2 justify-between items-center">
@@ -20,6 +25,7 @@ function Prodact({ item }: { item: Pizza }) {
         >
           <img
             src={item.image}
+            onClick={imageShowHandle}
             className="w-full h-28 md:h-44 object-cover rounded-lg aspect-4/4"
             alt=""
           />
@@ -41,6 +47,22 @@ function Prodact({ item }: { item: Pizza }) {
         ) : (
           ""
         )}
+      </div>
+      <div
+        className={`${imageShow ? "flex" : "hidden"} bg-black/75 flex-col gap-7 fixed h-screen w-screen top-0 left-0  z-50`}
+      >
+        <div className="p-3 flex justify-center items-center">
+          <div className="bg-white mt-5 rounded-full p-2" onClick={imageShowHandle}>
+            <img src="/icons8_close_500px.png" alt="" className="w-8" />
+          </div>
+        </div>
+        <div className="flex-1 flex items-center">
+          <img
+            src={item.image}
+            className="w-full object-cover aspect-4/4"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

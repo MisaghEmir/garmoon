@@ -7,6 +7,7 @@
   --theme-bg-600: rgb(218, 230, 249);
   --theme-bg-700: rgba(80, 144, 240, 0.111);
   --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+  overflow-x: hidden;
 }
 
 .loader {
