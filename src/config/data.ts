@@ -33,7 +33,7 @@ export const pizza = [
     price: "595,000",
     price_2: "925,000",
     category: "pizza",
-    image: "/1766803006-D3-HV1010www.tiktarh.png",
+    image: "/rostbif.jpeg",
   },
   {
     id: 1,
@@ -42,7 +42,7 @@ export const pizza = [
     price: "585,000",
     price_2: "895,000",
     category: "pizza",
-    image: "/1766803006-D3-HV1010www.tiktarh.png",
+    image: "/chbif.jpeg",
   },
   {
     id: 1,
@@ -69,7 +69,7 @@ export const pizza = [
     price: "695,000",
     price_2: "985,000",
     category: "pizza",
-    image: "/1766803006-D3-HV1010www.tiktarh.png",
+    image: "/tako.jpeg",
   },
   {
     id: 1,
@@ -117,7 +117,7 @@ export const berger = [
     price: "695,000",
     price_2: null,
     category: "berger",
-    image: "/BG1015286www.tiktarh.com.jpg",
+    image: "/pold.jpeg",
   },
   {
     id: 1,
@@ -315,7 +315,7 @@ export const pasta = [
     price: "285,000",
     price_2: null,
     category: "pasta",
-    image: "/1774946727-Cart1043015www.png",
+    image: "/sir.jpeg",
   },
   {
     id: 1,
