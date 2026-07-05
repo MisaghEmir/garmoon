@@ -108,7 +108,7 @@ export const berger = [
     price: "655,000",
     price_2: null,
     category: "berger",
-    image: "/BG1015286www.tiktarh.com.jpg",
+    image: "/mekzicano.jpeg",
   },
   {
     id: 1,
@@ -126,7 +126,7 @@ export const berger = [
     price: "525,000",
     price_2: null,
     category: "berger",
-    image: "/BG1015286www.tiktarh.com.jpg",
+    image: "/slidebergur.jpeg",
   },
   {
     id: 1,
@@ -210,7 +210,7 @@ export const sib = [
     price: "(دونفره) 835,000",
     price_2: null,
     category: "sib",
-    image: "/Cart1026666www.png",
+    image: "/sib_farangi.jpeg",
   },
   {
     id: 1,
@@ -258,7 +258,7 @@ export const sandvich = [
     price: "475,000",
     price_2: null,
     category: "sandvich",
-    image: "/Cart1027416www.png",
+    image: "/file.jpeg",
   },
   {
     id: 1,
